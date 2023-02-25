@@ -1,0 +1,10 @@
+[Unit]
+Description=ICTSC2023 simple webapp
+After=network.target
+
+[Service]
+Restart=always
+ExecStart=/home/user/webapp/main
+
+[Install]
+WantedBy=multi-user.target

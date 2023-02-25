@@ -1,0 +1,5 @@
+#!/bin/sh
+
+go build -o main main.go
+systemctl --user daemon-reload
+systemctl --user start webapp
