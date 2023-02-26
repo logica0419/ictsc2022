@@ -1,3 +1,3 @@
-module user-systemd
+module ictsc2022
 
 go 1.20
