@@ -1,5 +1,5 @@
 [Unit]
-Description=ICTSC2023 simple webapp
+Description=ICTSC2022 simple webapp
 After=network.target
 
 [Service]
