@@ -1,3 +1,3 @@
-module ictsc2022
+module webapp
 
 go 1.20

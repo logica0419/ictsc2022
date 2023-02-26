@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		_, err := w.Write([]byte("Hello, ICTSC2023 Contestant!\n"))
+		_, err := w.Write([]byte("Hello, ICTSC2022 Contestant!\n"))
 		if err != nil {
 			log.Printf("error: %v", err)
 		}
