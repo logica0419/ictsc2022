@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/sh -e
 
-docker build -t builder:v1 builder | exit 1
-docker build -t app:latest app | exit 1
+docker build -t builder:v1 builder
+docker build -t app:latest app
 docker rm -f app
 docker run -d -p 127.0.0.1:8080:8080 --name app app:latest
