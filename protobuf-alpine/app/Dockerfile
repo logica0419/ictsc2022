@@ -11,7 +11,7 @@ RUN protoc -I . --go_out=. --go_opt=paths=source_relative \
 COPY . .
 RUN go build -o /app main.go
 
-FROM alpine:3.14.2
+FROM alpine:3.17.2
 
 COPY --from=builder /app /app
 
