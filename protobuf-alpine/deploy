@@ -2,5 +2,7 @@
 
 docker build -t builder:v1 builder
 docker build -t app:latest app
-docker rm -f app
+if [ "$(docker ps -q -a)" ]; then
+  docker rm -f app
+fi
 docker run -d -p 127.0.0.1:8080:8080 --name app app:latest
